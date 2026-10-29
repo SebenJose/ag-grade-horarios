@@ -68,10 +68,6 @@ class Problema:
     def dia_do_slot(self, slot):
         return slot // len(self.aulas_dia)
 
-    def nome_slot(self, slot):
-        dia, aula = divmod(slot, len(self.aulas_dia))
-        return f"{self.dias[dia]} {self.aulas_dia[aula]['codigo']}"
-
 
 def carregar(pasta=PASTA_DADOS):
     pasta = Path(pasta)
