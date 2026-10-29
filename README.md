@@ -8,15 +8,16 @@ oferta 2026/2, garantindo que:
 - uma disciplina não coincida com o horário de seus pré-requisitos (para quem cursa as duas);
 - disciplinas do mesmo período não se sobreponham.
 
-Além disso, o AG procura grades mais confortáveis: aulas em blocos, sem excesso da mesma
-disciplina no dia e sem janelas entre aulas.
+Além disso, o AG procura grades mais confortáveis: aulas em duplas (duas seguidas, como no artigo
+de Santos e Barbosa indicado nas referências), sem excesso da mesma disciplina no dia e sem janelas
+entre aulas.
 
 ## Como funciona
 
 | Etapa | Estratégia |
 |---|---|
 | Cromossomo | um vetor de 60 posições (5 dias × 12 aulas) por período, contendo as aulas e os vazios; choques no mesmo período são impossíveis por construção |
-| Fitness | `1 / (1 + penalidade)`: peso 1000 para choques de professor e de pré-requisito, pesos menores para aulas isoladas, excesso diário e janelas |
+| Fitness | `1 / (1 + penalidade)`: peso 1000 para choques de professor e de pré-requisito, pesos menores para aulas isoladas, blocos com mais de duas aulas seguidas, excesso diário e janelas |
 | Seleção | torneio (padrão) ou roleta |
 | Crossover | baseado em ordem (OX), baseado em posição (PBX) ou período inteiro de um dos pais |
 | Mutação | troca de posições no mesmo período e mutação dirigida, que move aulas em choque |

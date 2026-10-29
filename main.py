@@ -47,7 +47,8 @@ def main():
     a = r.avaliacao
     print(f"Parada: {r.motivo_parada} após {r.geracoes} gerações ({r.segundos:.1f}s)")
     print(f"Choques de professor: {a.conflitos_professor} | choques de pré-requisito: {a.conflitos_pre_requisito}")
-    print(f"Aulas isoladas: {a.aulas_isoladas} | excesso diário: {a.excesso_diario} | janelas: {a.janelas}")
+    print(f"Aulas isoladas: {a.aulas_isoladas} | além da dupla: {a.alem_da_dupla} | "
+          f"excesso diário: {a.excesso_diario} | janelas: {a.janelas}")
     print(f"Penalidade: {a.penalidade:.0f} | fitness: {a.fitness:.6f}")
     salvar(r, prob, args.saida)
     print(f"Resultados salvos em {args.saida}/")

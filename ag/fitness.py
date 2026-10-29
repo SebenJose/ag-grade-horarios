@@ -6,6 +6,7 @@ Como cada horário de um período guarda um único gene, choques dentro do mesmo
 período são impossíveis por construção.
 """
 from collections import Counter
+from itertools import groupby
 from dataclasses import dataclass
 
 VAZIO = -1
@@ -16,6 +17,7 @@ class Pesos:
     professor: float = 1000   # restrição obrigatória
     pre_requisito: float = 1000  # restrição obrigatória
     aula_isolada: float = 10  # aula sem outra da mesma disciplina colada no turno
+    alem_da_dupla: float = 30  # aula a mais num bloco seguido da mesma disciplina (aulas em dupla)
     excesso_diario: float = 20  # aulas da disciplina no dia acima do limite
     janela: float = 5  # horário vago entre aulas de um mesmo turno
 
@@ -25,6 +27,7 @@ class Avaliacao:
     conflitos_professor: int
     conflitos_pre_requisito: int
     aulas_isoladas: int
+    alem_da_dupla: int
     excesso_diario: int
     janelas: int
     penalidade: float
@@ -63,7 +66,7 @@ def avaliar(ind, prob, pesos):
             professor += p
             pre += r
 
-    isoladas = excesso = janelas = 0
+    isoladas = alem = excesso = janelas = 0
     for crom in ind:
         por_dia = Counter()
         for bloco in prob.blocos_turno:
@@ -73,21 +76,24 @@ def avaliar(ind, prob, pesos):
                 continue
             janelas += sum(genes[i] == VAZIO for i in range(ocupados[0], ocupados[-1]))
             for i in ocupados:
-                g = genes[i]
-                por_dia[(prob.dia_do_slot(bloco[0]), g)] += 1
-                vizinhos = genes[i - 1] if i > 0 else None, genes[i + 1] if i + 1 < len(genes) else None
-                isoladas += g not in vizinhos
+                por_dia[(prob.dia_do_slot(bloco[0]), genes[i])] += 1
+            # Sequências da mesma disciplina no turno: o ideal é a dupla (duas aulas seguidas)
+            for g, seq in groupby(genes):
+                if g != VAZIO:
+                    n = len(list(seq))
+                    isoladas += n == 1
+                    alem += max(0, n - 2)
         excesso += sum(max(0, n - prob.limite_diario[d]) for (_, d), n in por_dia.items())
 
     penalidade = (pesos.professor * professor + pesos.pre_requisito * pre + pesos.aula_isolada * isoladas
-                  + pesos.excesso_diario * excesso + pesos.janela * janelas)
-    return Avaliacao(professor, pre, isoladas, excesso, janelas, penalidade)
+                  + pesos.alem_da_dupla * alem + pesos.excesso_diario * excesso + pesos.janela * janelas)
+    return Avaliacao(professor, pre, isoladas, alem, excesso, janelas, penalidade)
 
 
 def penalidade_minima(prob, pesos):
     """Menor penalidade possível (ótimo conhecido), usada como critério de parada.
 
-    Choques e janelas podem chegar a zero, mas uma disciplina com uma única aula,
+    Choques, janelas e blocos maiores que a dupla podem chegar a zero, mas uma disciplina com uma única aula,
     ou com número ímpar de aulas e limite diário de 2, sempre deixa uma aula isolada.
     """
     isoladas = sum(d.aulas_semanais == 1 or (lim == 2 and d.aulas_semanais % 2 == 1)

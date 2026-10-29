@@ -65,6 +65,14 @@ class TestFitness(unittest.TestCase):
         a = avaliar(ind, PROB, Pesos())
         self.assertEqual((a.aulas_isoladas, a.janelas), (1, 1))
 
+    def test_bloco_alem_da_dupla(self):
+        ind = vazio()
+        d = indice("CC3PI1")
+        ind[2][:4] = [d] * 4  # M1-M4 seguidas: duas aulas além da dupla
+        ind[2][6:8] = [d] * 2  # T1-T2: dupla, sem penalidade
+        a = avaliar(ind, PROB, Pesos())
+        self.assertEqual((a.alem_da_dupla, a.aulas_isoladas), (2, 0))
+
 
 class TestAlgoritmo(unittest.TestCase):
     def test_respeita_minimo_de_geracoes(self):
