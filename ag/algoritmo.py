@@ -1,6 +1,7 @@
 """Laço principal do algoritmo genético."""
 import random
 import time
+from collections import Counter
 from dataclasses import dataclass, field
 
 from .fitness import Pesos, avaliar, penalidade_minima
@@ -34,7 +35,7 @@ class Geracao:
     media: float
     pior: float
     conflitos_melhor: int
-    diversidade: float  # fração de indivíduos distintos
+    diversidade: float  # fração média de genes diferentes do gene mais comum (consenso) em cada posição
 
 
 @dataclass
@@ -55,6 +56,13 @@ def _chave(ind):
 
 def _copia(ind):
     return [list(crom) for crom in ind]
+
+
+def _diversidade(populacao):
+    """0 quando todos os indivíduos são iguais; cresce à medida que diferem do consenso."""
+    genes = [_chave(ind) for ind in populacao]
+    n = len(genes)
+    return sum(1 - Counter(pos).most_common(1)[0][1] / n for pos in zip(*genes)) / len(genes[0])
 
 
 def executar(prob, cfg=Config(), ao_fim_geracao=None):
@@ -78,8 +86,7 @@ def executar(prob, cfg=Config(), ao_fim_geracao=None):
 
         penalidades = [a.penalidade for a in avaliacoes]
         estado = Geracao(geracao, penalidades[ordem[0]], sum(penalidades) / len(penalidades),
-                         penalidades[ordem[-1]], avaliacoes[ordem[0]].conflitos,
-                         len({_chave(i) for i in populacao}) / len(populacao))
+                         penalidades[ordem[-1]], avaliacoes[ordem[0]].conflitos, _diversidade(populacao))
         historico.append(estado)
         if ao_fim_geracao:
             ao_fim_geracao(estado)
