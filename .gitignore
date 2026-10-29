@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Resultados gerados pelas execuções
+resultados/
+
+# Material da disciplina (enunciado e slides do professor)
+Docs/
+
+# Página salva pelo navegador: só o HTML é usado
+dados/raw/*_files/
+
+# Editores e sistema
+.vscode/
+.idea/
+.DS_Store
