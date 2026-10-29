@@ -23,6 +23,7 @@ entre aulas.
 | Mutação | troca de posições no mesmo período e mutação dirigida, que move aulas em choque |
 | Diversidade | elitismo e rejeição de filhos duplicados |
 | Parada | mínimo de 500 gerações; depois, ótimo conhecido, convergência ou máximo de gerações |
+| Paralelismo | execuções independentes (sementes ou estratégias) em processos separados, uma por núcleo; o AG em si continua sequencial |
 
 ## Dados
 
@@ -35,8 +36,9 @@ Detalhes e como atualizar em [`dados/README.md`](dados/README.md).
 Python 3.10+, sem dependências externas.
 
 ```bash
-python main.py --semente 42                 # executa e salva em resultados/<data-hora>/
+python main.py --semente 2                  # executa e salva em resultados/<data-hora>/
 python main.py --help                       # parâmetros (seleção, crossover, taxas, gerações...)
+python main.py --semente 1 --execucoes 8    # 8 sementes em paralelo, uma por núcleo; salva a melhor
 python -m unittest -v tests.test_ag         # testes
 ```
 
@@ -48,6 +50,7 @@ python -m unittest -v tests.test_ag         # testes
 | `ag/fitness.py` | penalidades e fitness |
 | `ag/operadores.py` | inicialização, seleção, crossover e mutação |
 | `ag/algoritmo.py` | laço do AG, elitismo e critérios de parada |
+| `ag/paralelo.py` | execuções independentes em paralelo (um processo por núcleo) |
 | `ag/saida.py` | grade em texto e exportação (CSV/JSON) |
 | `main.py` | linha de comando |
 | `dados/` | disciplinas, professores, pré-requisitos e horários |

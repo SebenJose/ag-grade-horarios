@@ -5,6 +5,7 @@ from collections import Counter
 from ag.algoritmo import Config, executar
 from ag.dados import carregar
 from ag.fitness import VAZIO, Pesos, avaliar
+from ag.paralelo import executar_varias
 from ag.operadores import CROSSOVERS, cruzar, individuo_aleatorio, mutacao_dirigida, mutacao_troca
 
 PROB = carregar()
@@ -81,6 +82,12 @@ class TestAlgoritmo(unittest.TestCase):
         self.assertEqual(r.geracoes, 20)
         self.assertEqual(len(r.historico), 21)
         self.assertTrue(mesmo_conteudo(r.melhor))
+
+    def test_paralelo_igual_ao_sequencial(self):
+        cfgs = [Config(tamanho_populacao=10, min_geracoes=15, max_geracoes=15, semente=s) for s in (1, 2, 3)]
+        paralelo = executar_varias(PROB, cfgs, processos=2)
+        for cfg, r in zip(cfgs, paralelo):
+            self.assertEqual(r.melhor, executar(PROB, cfg).melhor)
 
 
 if __name__ == "__main__":
