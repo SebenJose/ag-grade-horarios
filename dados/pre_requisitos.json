@@ -1,0 +1,43 @@
+{
+  "fonte": "PPC 2023 do curso (quadros de informações gerais de cada disciplina)",
+  "pre_requisitos": {
+    "CC2AED2": [
+      "CC1AED1"
+    ],
+    "CC2CLD": [
+      "MA1LM"
+    ],
+    "CC2POO": [
+      "CC1AED1"
+    ],
+    "CC3AED3": [
+      "CC1AED1"
+    ],
+    "CC3ES": [
+      "CC2POO",
+      "CC2ER"
+    ],
+    "MA3AL": [
+      "MA2MA"
+    ],
+    "MA3CA": [
+      "MA2MA"
+    ],
+    "CC4IHC": [
+      "CC3ES"
+    ],
+    "CC4LBD": [
+      "CC1MBD"
+    ],
+    "CC4PO": [
+      "CC3AED3"
+    ],
+    "CC4RC": [
+      "CC3AOC",
+      "CC1AED1"
+    ],
+    "CC4SO": [
+      "CC3AOC"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "fonte": "UTFPR - Grade e Corpo Docente (sistema acadêmico) + Planos de Ensino; pré-requisitos do PPC 2023",
+  "ano_periodo": "2026/2",
+  "professores": [
+    {
+      "nome": "Agnaldo Da Costa",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC3PI1",
+        "CC4RC",
+        "CC4SO"
+      ]
+    },
+    {
+      "nome": "Anderson Brilhador",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC1AED1"
+      ]
+    },
+    {
+      "nome": "Davi Marcondes Rocha",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "MA1LM",
+        "CC2ER"
+      ]
+    },
+    {
+      "nome": "Djonatham Caua Fritzen Christ",
+      "cargo": "Professor Magisterio Superior-Substituto",
+      "disciplinas": [
+        "CC2AED2",
+        "CC3AOC"
+      ]
+    },
+    {
+      "nome": "Evandro Alves Nakajima",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "MA2MA",
+        "MA3AL"
+      ]
+    },
+    {
+      "nome": "Giani Carla Ito",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC3PI1"
+      ]
+    },
+    {
+      "nome": "Giuvane Conti",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC1ICC",
+        "CC2POO"
+      ]
+    },
+    {
+      "nome": "Gloria Patricia Lopez Sepulveda",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC2CLD",
+        "CC4PO"
+      ]
+    },
+    {
+      "nome": "Joao Augusto Navarro Cossich",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "MA1FM",
+        "MA4PE"
+      ]
+    },
+    {
+      "nome": "Leiliane Pereira De Rezende",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC1MBD",
+        "CC4LBD"
+      ]
+    },
+    {
+      "nome": "Thiago Franca Naves",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "CC3AED3"
+      ]
+    },
+    {
+      "nome": "Vanderlea De Lima Inaba",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "MA3CA"
+      ]
+    },
+    {
+      "nome": "Vera Lucia Vasilevski Dos Santos Araujo",
+      "cargo": "Professor Do Magisterio Superior",
+      "disciplinas": [
+        "HU1LA"
+      ]
+    },
+    {
+      "nome": "Wellington De Souza Ferreira",
+      "cargo": "Professor Magisterio Superior-Substituto",
+      "disciplinas": [
+        "CC3ES",
+        "CC4IHC"
+      ]
+    }
+  ]
+}

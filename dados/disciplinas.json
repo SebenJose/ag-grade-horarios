@@ -1,0 +1,355 @@
+{
+  "fonte": "UTFPR - Grade e Corpo Docente (sistema acadêmico) + Planos de Ensino; pré-requisitos do PPC 2023",
+  "ano_periodo": "2026/2",
+  "disciplinas": [
+    {
+      "codigo": "CC1AED1",
+      "nome": "Algoritmos E Estrutura De Dados I",
+      "periodo": 1,
+      "ch_total": 90,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=383&p_Plaenscodnr=16807&p_Unidcodnr=13",
+      "professores": [
+        "Anderson Brilhador"
+      ],
+      "aulas_teoricas": 4,
+      "aulas_praticas": 2,
+      "aulas_semanais": 6,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "CC1ICC",
+      "nome": "Introdução À Ciência Da Computação",
+      "periodo": 1,
+      "ch_total": 45,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=385&p_Plaenscodnr=14607&p_Unidcodnr=13",
+      "professores": [
+        "Giuvane Conti"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 0,
+      "aulas_semanais": 3,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "CC1MBD",
+      "nome": "Modelagem De Banco De Dados",
+      "periodo": 1,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=386&p_Plaenscodnr=16808&p_Unidcodnr=13",
+      "professores": [
+        "Leiliane Pereira De Rezende"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "HU1LA",
+      "nome": "Linguagem Acadêmica",
+      "periodo": 1,
+      "ch_total": 45,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=384&p_Plaenscodnr=14606&p_Unidcodnr=13",
+      "professores": [
+        "Vera Lucia Vasilevski Dos Santos Araujo"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 1,
+      "aulas_semanais": 3,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "MA1FM",
+      "nome": "Fundamentos De Matemática",
+      "periodo": 1,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=382&p_Plaenscodnr=14083&p_Unidcodnr=13",
+      "professores": [
+        "Joao Augusto Navarro Cossich"
+      ],
+      "aulas_teoricas": 4,
+      "aulas_praticas": 0,
+      "aulas_semanais": 4,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "MA1LM",
+      "nome": "Lógica Matemática",
+      "periodo": 1,
+      "ch_total": 45,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=387&p_Plaenscodnr=16822&p_Unidcodnr=13",
+      "professores": [
+        "Davi Marcondes Rocha"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 0,
+      "aulas_semanais": 3,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "CC2AED2",
+      "nome": "Algoritmos E Estrutura De Dados Ii",
+      "periodo": 2,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=501&p_Plaenscodnr=16829&p_Unidcodnr=13",
+      "professores": [
+        "Djonatham Caua Fritzen Christ"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC1AED1"
+      ]
+    },
+    {
+      "codigo": "CC2CLD",
+      "nome": "Circuitos Lógicos Digitais",
+      "periodo": 2,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=502&p_Plaenscodnr=14976&p_Unidcodnr=13",
+      "professores": [
+        "Gloria Patricia Lopez Sepulveda"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "MA1LM"
+      ]
+    },
+    {
+      "codigo": "CC2ER",
+      "nome": "Engenharia De Requisitos",
+      "periodo": 2,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=503&p_Plaenscodnr=14977&p_Unidcodnr=13",
+      "professores": [
+        "Davi Marcondes Rocha"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 1,
+      "aulas_semanais": 4,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "CC2POO",
+      "nome": "Programação Orientada A Objetos",
+      "periodo": 2,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=504&p_Plaenscodnr=16809&p_Unidcodnr=13",
+      "professores": [
+        "Giuvane Conti"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC1AED1"
+      ]
+    },
+    {
+      "codigo": "MA2MA",
+      "nome": "Matemática Aplicada",
+      "periodo": 2,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=500&p_Plaenscodnr=16823&p_Unidcodnr=13",
+      "professores": [
+        "Evandro Alves Nakajima"
+      ],
+      "aulas_teoricas": 4,
+      "aulas_praticas": 0,
+      "aulas_semanais": 4,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "CC3AED3",
+      "nome": "Algoritmos E Estrutura De Dados Iii",
+      "periodo": 3,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=507&p_Plaenscodnr=16810&p_Unidcodnr=13",
+      "professores": [
+        "Thiago Franca Naves"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 1,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC1AED1"
+      ]
+    },
+    {
+      "codigo": "CC3AOC",
+      "nome": "Arquitetura E Organização De Computadores",
+      "periodo": 3,
+      "ch_total": 90,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=508&p_Plaenscodnr=16811&p_Unidcodnr=13",
+      "professores": [
+        "Djonatham Caua Fritzen Christ"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 3,
+      "aulas_semanais": 6,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "CC3ES",
+      "nome": "Engenharia De Software",
+      "periodo": 3,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=509&p_Plaenscodnr=16812&p_Unidcodnr=13",
+      "professores": [
+        "Wellington De Souza Ferreira"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 1,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC2POO",
+        "CC2ER"
+      ]
+    },
+    {
+      "codigo": "CC3PI1",
+      "nome": "Projeto Integrador I: Computação E Educação",
+      "periodo": 3,
+      "ch_total": 180,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=534&p_Plaenscodnr=16830&p_Unidcodnr=13",
+      "professores": [
+        "Agnaldo Da Costa",
+        "Giani Carla Ito"
+      ],
+      "aulas_teoricas": 1,
+      "aulas_praticas": 11,
+      "aulas_semanais": 12,
+      "pre_requisitos": []
+    },
+    {
+      "codigo": "MA3AL",
+      "nome": "Álgebra Linear",
+      "periodo": 3,
+      "ch_total": 45,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=505&p_Plaenscodnr=16824&p_Unidcodnr=13",
+      "professores": [
+        "Evandro Alves Nakajima"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 0,
+      "aulas_semanais": 3,
+      "pre_requisitos": [
+        "MA2MA"
+      ]
+    },
+    {
+      "codigo": "MA3CA",
+      "nome": "Cálculo Aplicado",
+      "periodo": 3,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=506&p_Plaenscodnr=16825&p_Unidcodnr=13",
+      "professores": [
+        "Vanderlea De Lima Inaba"
+      ],
+      "aulas_teoricas": 4,
+      "aulas_praticas": 0,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "MA2MA"
+      ]
+    },
+    {
+      "codigo": "CC4IHC",
+      "nome": "Interação Humano Computador",
+      "periodo": 4,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=514&p_Plaenscodnr=16813&p_Unidcodnr=13",
+      "professores": [
+        "Wellington De Souza Ferreira"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC3ES"
+      ]
+    },
+    {
+      "codigo": "CC4LBD",
+      "nome": "Laboratório De Banco De Dados",
+      "periodo": 4,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=515&p_Plaenscodnr=16814&p_Unidcodnr=13",
+      "professores": [
+        "Leiliane Pereira De Rezende"
+      ],
+      "aulas_teoricas": 1,
+      "aulas_praticas": 3,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC1MBD"
+      ]
+    },
+    {
+      "codigo": "CC4PO",
+      "nome": "Pesquisa E Ordenação",
+      "periodo": 4,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=511&p_Plaenscodnr=16815&p_Unidcodnr=13",
+      "professores": [
+        "Gloria Patricia Lopez Sepulveda"
+      ],
+      "aulas_teoricas": 3,
+      "aulas_praticas": 1,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC3AED3"
+      ]
+    },
+    {
+      "codigo": "CC4RC",
+      "nome": "Redes De Computadores",
+      "periodo": 4,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=512&p_Plaenscodnr=16816&p_Unidcodnr=13",
+      "professores": [
+        "Agnaldo Da Costa"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC3AOC",
+        "CC1AED1"
+      ]
+    },
+    {
+      "codigo": "CC4SO",
+      "nome": "Sistemas Operacionais",
+      "periodo": 4,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=513&p_Plaenscodnr=16817&p_Unidcodnr=13",
+      "professores": [
+        "Agnaldo Da Costa"
+      ],
+      "aulas_teoricas": 2,
+      "aulas_praticas": 2,
+      "aulas_semanais": 4,
+      "pre_requisitos": [
+        "CC3AOC"
+      ]
+    },
+    {
+      "codigo": "MA4PE",
+      "nome": "Probabilidade E Estatística",
+      "periodo": 4,
+      "ch_total": 60,
+      "plano_url": "https://sistemas2.utfpr.edu.br/dpls/sistema/acad00/mpPlanoEnsinoInformativo.pcPrintInfoPlaEns?p_Disccodnr=510&p_Plaenscodnr=16826&p_Unidcodnr=13",
+      "professores": [
+        "Joao Augusto Navarro Cossich"
+      ],
+      "aulas_teoricas": 4,
+      "aulas_praticas": 0,
+      "aulas_semanais": 4,
+      "pre_requisitos": []
+    }
+  ]
+}

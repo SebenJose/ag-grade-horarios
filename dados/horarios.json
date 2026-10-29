@@ -1,0 +1,59 @@
+{
+  "dias": [
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta"
+  ],
+  "aulas": [
+    {
+      "codigo": "M1",
+      "inicio": "07:30"
+    },
+    {
+      "codigo": "M2",
+      "inicio": "08:20"
+    },
+    {
+      "codigo": "M3",
+      "inicio": "09:10"
+    },
+    {
+      "codigo": "M4",
+      "inicio": "10:20"
+    },
+    {
+      "codigo": "M5",
+      "inicio": "11:10"
+    },
+    {
+      "codigo": "M6",
+      "inicio": "12:00"
+    },
+    {
+      "codigo": "T1",
+      "inicio": "13:00"
+    },
+    {
+      "codigo": "T2",
+      "inicio": "13:50"
+    },
+    {
+      "codigo": "T3",
+      "inicio": "14:40"
+    },
+    {
+      "codigo": "T4",
+      "inicio": "15:50"
+    },
+    {
+      "codigo": "T5",
+      "inicio": "16:40"
+    },
+    {
+      "codigo": "T6",
+      "inicio": "17:30"
+    }
+  ]
+}
