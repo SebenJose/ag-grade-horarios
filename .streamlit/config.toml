@@ -1,0 +1,16 @@
+# Paleta da UTFPR: preto, branco e amarelo
+[theme]
+base = "light"
+primaryColor = "#FFCC00"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F2F2F2"
+textColor = "#000000"
+
+[theme.sidebar]
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#262626"
+textColor = "#FFFFFF"
+
+[client]
+# Esconde o botão Deploy e o menu de desenvolvedor
+toolbarMode = "minimal"

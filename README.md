@@ -33,7 +33,7 @@ Detalhes e como atualizar em [`dados/README.md`](dados/README.md).
 
 ## Uso
 
-Python 3.10+, sem dependências externas.
+Python 3.10+. O algoritmo e a linha de comando não têm dependências externas; a interface web usa Streamlit.
 
 ```bash
 python main.py --semente 2                  # executa e salva em resultados/<data-hora>/
@@ -41,6 +41,17 @@ python main.py --help                       # parâmetros (seleção, crossover,
 python main.py --semente 1 --execucoes 8    # 8 sementes em paralelo, uma por núcleo; salva a melhor
 python -m unittest -v tests.test_ag         # testes
 ```
+
+### Interface web
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+A página permite escolher os parâmetros (os detalhados ficam em "Avançado"), acompanhar a evolução durante a
+execução, ver a grade por período e por professor (choques destacados em preto) e comparar as estratégias de
+seleção e crossover com várias sementes, em paralelo. Para salvar os resultados em arquivo, use `main.py`.
 
 ## Estrutura
 
@@ -53,6 +64,7 @@ python -m unittest -v tests.test_ag         # testes
 | `ag/paralelo.py` | execuções independentes em paralelo (um processo por núcleo) |
 | `ag/saida.py` | grade em texto e exportação (CSV/JSON) |
 | `main.py` | linha de comando |
+| `app.py` | interface web (Streamlit) |
 | `dados/` | disciplinas, professores, pré-requisitos e horários |
 | `scraper/` | extração dos dados do sistema da UTFPR |
 | `tests/` | testes dos operadores, do fitness e do laço |

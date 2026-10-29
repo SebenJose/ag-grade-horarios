@@ -1,0 +1,1 @@
+streamlit>=1.40  # apenas para a interface web (app.py)
